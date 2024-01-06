@@ -1,10 +1,6 @@
-# empty-project
+# QuoteGenerator
 
-Change Project name:
-    Above
-    index.html
-    package.json
-
+Project to generate Quotes
 
 ## Building and running on localhost
 
