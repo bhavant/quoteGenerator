@@ -1,5 +1,7 @@
 const webpack = require('webpack');
+const CopyPlugin = require('copy-webpack-plugin');
 const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const config = {
     entry: './src/index.ts',
@@ -30,7 +32,17 @@ const config = {
             '.ts',
             '.js'
         ]
-    }
+    },
+    plugins: [
+        new CopyPlugin({
+            patterns: [
+                { from: "src/index.html"},
+                { from: "src/images", to: "images"},
+                //{ from: "other", to: "public" },
+            ],
+        }),
+        new CleanWebpackPlugin()
+    ],
 };
 
 module.exports = config;
