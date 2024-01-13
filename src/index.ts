@@ -1,2 +1,8 @@
 import "./styles.css"
-console.log("hello world!");
+import { getQuotesCall } from "./GetQuotes/getQuotesAPI"
+
+
+// Call the quotes API on load
+getQuotesCall();
+
+const 
