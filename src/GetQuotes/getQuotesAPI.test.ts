@@ -1,0 +1,1 @@
+import { getQuotesCall, getDisplayQuote } from "./getQuotesAPI";

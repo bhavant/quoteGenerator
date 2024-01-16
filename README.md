@@ -42,6 +42,10 @@ To run unit tests:
 npm test
 ```
 
+## TODO
+1. All tests
+2. Reformat where possible
+
 ## Credits
 
 Made with [createapp.dev](https://createapp.dev/)

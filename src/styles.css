@@ -18,7 +18,7 @@ body {
     text-align: center;
 }
 
-.quote-parent {
+#quote-parent {
     width: auto;
     max-width: 900px;
     border-radius: 10px;
@@ -27,7 +27,7 @@ body {
     box-shadow: 0 10px 10px 10px rgba(0,0,0,0.2)
 }
 
-.quote-mark {
+#quote-mark {
     font-size: 3rem;
 }
 
@@ -35,17 +35,21 @@ body {
     font-size: 2.75rem;
 }
 
-.quote-author {
+.longQuote {
+    font-size: 2rem;
+}
+
+#quote-author {
     margin-top: 15px;
     font-size: 2rem;
     font-weight: 400;
     font-style: italic;
 }
 
-.button-container {
+#button-container {
     margin-top: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 button {
@@ -65,11 +69,11 @@ button:hover {
     filter: brightness(110%);
 }
 
-.twit-it:hover {
+#twit-it:hover {
     color: #00ACEE;
 }
 
-.twit-it {
+#twit-it {
     font-size: 1.5rem;
 }
 
@@ -79,15 +83,15 @@ button:active {
 }
 
 @media screen and (max-width: 1000px) {
-    .quote-parent {
+    #quote-parent {
         margin: auto 10px;
     }
 
-    .quote {
+    #quote {
         font-size: 2rem;
     }
 
-    .quote-mark {
+    #quote-mark {
         font-size: 2.5rem;
     }
 }
