@@ -24,7 +24,7 @@ body {
     border-radius: 10px;
     padding: 20px 30px;
     background-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.2)
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 #quote-mark {
@@ -53,15 +53,15 @@ body {
 }
 
 button {
-    border-radius: .6rem;
-    padding: .4rem 1.3rem;
+    border-radius: 0.6rem;
+    padding: 0.4rem 1.3rem;
     color: #ffffff;
     background-color: rgba(74, 72, 72, 0.95);
     outline: none;
     cursor: pointer;
     height: 2.3rem;
     border: none;
-    box-shadow: 0 0.3rem rgba(121,121,121,0.65);
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
     font-size: 1.1rem;
 }
 
@@ -70,7 +70,7 @@ button:hover {
 }
 
 #twit-it:hover {
-    color: #00ACEE;
+    color: #00acee;
 }
 
 #twit-it {
@@ -79,7 +79,7 @@ button:hover {
 
 button:active {
     transform: translate(0, 0.3rem);
-    box-shadow: 0 .1rem rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.4);
 }
 
 @media screen and (max-width: 1000px) {
