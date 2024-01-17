@@ -44,6 +44,6 @@
         "webpack-cli": "^5.1.4"
     },
     "lint-staged": {
-        "*.js": "eslint --cache --fix"
+        "*.ts": "eslint --cache --fix"
     }
 }
