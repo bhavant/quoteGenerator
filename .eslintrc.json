@@ -5,5 +5,16 @@
     "parserOptions": { "project": ["./tsconfig.json"] },
     "plugins": ["@typescript-eslint"],
     "rules": {},
-    "ignorePatterns": []
+    "ignorePatterns": [
+        "/**/node_modules/*",
+        "node_modules/",
+        "dist/",
+        "*.md",
+        "*.json",
+        "babel.config.js",
+        "webpack.config.js",
+        "*.test.ts",
+        "*.html",
+        "backupQuotes.ts"
+    ]
 }
