@@ -49,5 +49,5 @@ npm test
 
 ## Credits
 
-Made with [createapp.dev](https://createapp.dev/)
-ESLint - [eslint](https://eslint.org/)
+* Made with [createapp.dev](https://createapp.dev/)
+* ESLint - [eslint](https://eslint.org/)

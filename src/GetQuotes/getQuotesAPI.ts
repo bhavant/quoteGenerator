@@ -9,7 +9,8 @@ export const getQuotesCall = async (): Promise<void> => {
         fetch(quoteURL)
             .then((response) => {
                 if (!response.ok) {
-                    console.error('API Call Failed');
+                    // console.error('API Call Failed', response.statusText);
+                    throw new Error(response.statusText);
                 }
                 return response.json();
             })
@@ -18,7 +19,7 @@ export const getQuotesCall = async (): Promise<void> => {
 };
 
 const genQuoteIndex = (arrLength: number): number => {
-    return arrLength - Math.floor(Math.random() * arrLength);
+    return Math.floor(Math.random() * arrLength);
 };
 
 export const getDisplayQuote = (): quoteObject => {

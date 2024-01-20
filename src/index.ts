@@ -1,13 +1,18 @@
-import './styles.css';
 import { getDisplayQuote, getQuotesCall } from './GetQuotes/getQuotesAPI';
+import './styles.css';
 
 // Call the quotes API on load
-getQuotesCall();
+try {
+    getQuotesCall();
+} catch (error) {
+    // Try the API again after a Timeout. Else the get Quote will do that again.
+    setTimeout(() => {
+        getQuotesCall(); // Ignore if it errors out again. Backup Quotes are in place.
+    }, 1000);
+}
 
-// const quoteContainer = document.querySelector('#quote-container');
 const quote = document.querySelector('#quote');
 const quoteauthor = document.querySelector('#quote-author');
-// const buttonContainer = document.querySelector('#button-container');
 const newQuoteBtn = document.querySelector('#new-quote');
 
 const newQuote = () => {
