@@ -5,10 +5,8 @@ import './styles.css';
 try {
     getQuotesCall();
 } catch (error) {
-    // Try the API again after a Timeout. Else the get Quote will do that again.
-    setTimeout(() => {
-        getQuotesCall(); // Ignore if it errors out again. Backup Quotes are in place.
-    }, 1000);
+    // Ignore if it errors out. Backup Quotes are in place. Also the get Quote will do that again.
+    console.error('API Failed');
 }
 
 const quote = document.querySelector('#quote');
